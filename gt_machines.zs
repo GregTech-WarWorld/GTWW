@@ -55,3 +55,5 @@ assembler.recipeBuilder().duration(200).EUt(30).inputs([<appliedenergistics2:mat
 polarizer.recipeBuilder().inputs([<appliedenergistics2:crystal_seed:0>]).outputs([<appliedenergistics2:material:10>]).EUt(30).duration(200).buildAndRegister();
 polarizer.recipeBuilder().inputs([<appliedenergistics2:crystal_seed:600>]).outputs([<appliedenergistics2:material:11>]).EUt(30).duration(200).buildAndRegister();
 polarizer.recipeBuilder().inputs([<appliedenergistics2:crystal_seed:1200>]).outputs([<appliedenergistics2:material:12>]).EUt(30).duration(200).buildAndRegister();
+
+//ModernWarfare grenades and devices
