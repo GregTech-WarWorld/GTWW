@@ -1,0 +1,6 @@
+#loader contenttweaker
+
+import mods.contenttweaker.VanillaFactory;
+import mods.contenttweaker.Item;
+import mods.contenttweaker.Color;
+//这里什么也没有
