@@ -1,2 +1,14 @@
 //这只是一行注释
 //在做了
+/*
+	自定义生物死亡掉落物，示例如下
+	addDrop(item,min,max);
+	羊死亡获得苹果1-5个
+*/
+<entity:sheep>.addDrop(<minecraft:apple>, 1, 5);
+
+// 只有玩家杀死情况下才会掉落金苹果1-2个
+<entity:sheep>.addPlayerOnlyDrop(<minecraft:golden_apple>, 1, 2);
+
+// 羊死亡不再会掉落羊毛
+<entity:sheep>.removeDrop(<minecraft:wool:*>);
