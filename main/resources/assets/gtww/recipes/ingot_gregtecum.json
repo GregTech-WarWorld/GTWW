@@ -1,0 +1,14 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    
+    "group": "gtww:recipes",
+    
+    "result": {
+        "item": "gtww:ingot_gregtecum",
+        "count": 9
+    },
+    
+    "ingredients": [
+        {"item":"gtww:block_gregtecum", "data": 0}
+    ]
+}

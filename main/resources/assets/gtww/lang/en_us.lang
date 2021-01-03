@@ -1,0 +1,8 @@
+//Items
+item.logo_gtww.name=GregTech:WarWorld
+
+//blocks
+tile.block_gtww.name=GTWW Block
+
+//creativeTabs
+itemGroup.gtwwtab=GregTech:WarWorld

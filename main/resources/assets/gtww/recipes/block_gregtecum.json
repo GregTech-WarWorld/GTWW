@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "group": "gtww:recipes",
+    
+    "pattern":[
+        "AAA",
+        "AAA",
+        "AAA"
+    ],
+    
+    "key":{
+        "A":{
+            "item": "gtww:ingot_gregtecum"
+        }
+    },
+    
+    "result": {
+        "item": "gtww:block_gregtecum"
+    }
+}
