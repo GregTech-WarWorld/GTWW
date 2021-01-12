@@ -1,0 +1,123 @@
+import mods.gregtech.recipe.RecipeMap;
+import mods.gregtech.recipe.RecipeMaps;
+import mods.gregtech.recipe.FuelRecipe;
+
+val hammer = RecipeMap.getByName("forge_hammer");
+val compressor = RecipeMap.getByName("compressor");
+val macerator = RecipeMap.getByName("macerator");
+val assembler = RecipeMap.getByName("assembler");
+val alloy = RecipeMap.getByName("alloy_smelter");
+val extractor = RecipeMap.getByName("extractor");
+val lathe = RecipeMap.getByName("lathe");
+val canner = RecipeMap.getByName("canner");
+val fluid_canner = RecipeMap.getByName("fluid_canner");
+val fluid_extractor = RecipeMap.getByName("fluid_extractor");
+val freezer = RecipeMap.getByName("vacuum_freezer");
+val mixer = RecipeMap.getByName("mixer");
+val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
+val sifter = RecipeMap.getByName("sifter");
+val autoclave = RecipeMap.getByName("autoclave");
+val reactor = RecipeMap.getByName("chemical_reactor");
+val solidifier = RecipeMap.getByName("fluid_solidifier");
+val saw = RecipeMap.getByName("cutting_saw");
+val forming = RecipeMap.getByName("forming_press");
+val electrolyzer = RecipeMap.getByName("electrolyzer");
+val circuit_assembler = RecipeMap.getByName("circuit_assembler");
+val implosion = RecipeMap.getByName("implosion_compressor");
+val engraver = RecipeMap.getByName("laser_engraver");
+val attractor = RecipeMap.getByName("attractor");
+val packer = RecipeMap.getByName("packer");
+val unpacker = RecipeMap.getByName("unpacker");
+val arc = RecipeMap.getByName("arc_furnace");
+val plasma_arc = RecipeMap.getByName("plasma_arc_furnace");
+val bath = RecipeMap.getByName("chemical_bath");
+val mill = RecipeMap.getByName("wiremill");
+val centrifuge = RecipeMap.getByName("centrifuge");
+val semi_fluid = RecipeMap.getByName("semi_fluid_generator");
+val polarizer = RecipeMap.getByName("polarizer");
+val extruder = RecipeMap.getByName("extruder");
+//xiaoxi
+//icbm
+recipes.removeByMod("vehicle"); 
+recipes.removeByMod("icbmclassic"); 
+//玻璃压力板
+alloy.recipeBuilder().inputs([<minecraft:glass_pane>,<minecraft:glass_pane>]).outputs([<icbmclassic:glasspressureplate>]).duration(60).EUt(512).buildAndRegister();
+//玻璃按钮
+compressor.recipeBuilder().inputs([<minecraft:glass>]).outputs([<icbmclassic:glassbutton>]).duration(60).EUt(512).buildAndRegister();
+//火箭发射器
+assembler.recipeBuilder().inputs([<gtadditions:ga_meta_item:231>*16,<quark:iron_button>,<gregtech:meta_item_1:32692>,<gregtech:meta_item_1:32602>]).fluidInputs([<liquid:plastic>*4680]).outputs([<icbmclassic:rocketlauncher>]).property("circuit", 10).duration(6000).EUt(512).buildAndRegister();
+//火箭外壳????
+assembler.recipeBuilder().inputs([<gtadditions:ga_meta_item:184>*16,<gregtech:meta_item_2:32504>*32]).fluidInputs([<liquid:polytetrafluoroethylene>*4680]).outputs([<icbmclassic:missile:24>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//发动机
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32600>*2,<gregtech:meta_item_1:32610>,<gregtech:meta_item_1:32640>,<gregtech:meta_item_2:18095>*2,<gregtech:meta_item_1:10183>*8]).fluidInputs([<liquid:polytetrafluoroethylene>*1152]).outputs([<vehicle:small_engine:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32602>*2,<gregtech:meta_item_1:32612>,<gregtech:meta_item_1:32642>,<gregtech:meta_item_2:18183>*2,<gregtech:meta_item_1:10183>*8]).fluidInputs([<liquid:polytetrafluoroethylene>*1152]).outputs([<vehicle:small_engine:2>]).property("circuit", 10).duration(600).EUt(512).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32604>*2,<gregtech:meta_item_1:32614>,<gregtech:meta_item_1:32644>,<gregtech:meta_item_2:18235>*2,<gregtech:meta_item_1:10183>*8]).fluidInputs([<liquid:polytetrafluoroethylene>*1152]).outputs([<vehicle:small_engine:3>]).property("circuit", 10).duration(600).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32607>*2,<gregtech:meta_item_1:32616>,<gregtech:meta_item_1:32646>,<gregtech:meta_item_2:18972>*2,<gregtech:meta_item_1:10183>*8]).fluidInputs([<liquid:polytetrafluoroethylene>*1152]).outputs([<vehicle:small_engine:4>]).property("circuit", 10).duration(6000).EUt(8000).buildAndRegister();
+//炸弹 
+compressor.recipeBuilder().inputs([<minecraft:tnt>]).outputs([<icbmclassic:explosives>]).duration(600).EUt(32).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>*2,<gregtech:meta_item_1:2218>*8]).outputs([<icbmclassic:explosives:7>]).property("circuit", 10).duration(600).EUt(64).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>*2,<minecraft:ender_pearl>*8]).outputs([<icbmclassic:explosives:6>]).property("circuit", 10).duration(600).EUt(64).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>*2,<minecraft:noteblock>*8]).outputs([<icbmclassic:explosives:10>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>*2,<minecraft:arrow>*16]).outputs([<icbmclassic:explosives:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:1>,<gregtech:meta_item_1:2065>*16]).outputs([<icbmclassic:explosives:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:1>*4,<icbmclassic:explosives:2>*2]).outputs([<icbmclassic:explosives:8>]).property("circuit", 10).duration(600).EUt(512).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>*8]).outputs([<icbmclassic:explosives:11>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:6>,<icbmclassic:explosives:4>*4,<icbmclassic:explosives:2>*4]).outputs([<icbmclassic:explosives:13>]).property("circuit", 10).duration(600).EUt(512).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:2>*9]).outputs([<icbmclassic:explosives:17>]).property("circuit", 10).duration(600).EUt(4096).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:7>*4]).outputs([<icbmclassic:explosives:20>]).property("circuit", 10).duration(600).EUt(4096).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:7>*2,<minecraft:ice>*8,<minecraft:snow>*8]).outputs([<icbmclassic:explosives:18>]).property("circuit", 10).duration(600).EUt(512).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:4>*4,<minecraft:rotten_flesh>*16]).outputs([<icbmclassic:explosives:9>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:1>*2,]).fluidInputs([<liquid:potion.minecraft.weakness>*100]).outputs([<icbmclassic:explosives:3>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>,<gregtech:meta_item_1:10076>*18]).outputs([<icbmclassic:explosives:15>]).property("circuit", 10).duration(600).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:2219>*64,<gregtech:meta_item_1:2219>*64,<gregtech:meta_item_1:2219>*64,<gregtech:meta_item_1:2219>*64,<icbmclassic:explosives:8>*2]).outputs([<icbmclassic:explosives:19>]).property("circuit", 10).duration(600).EUt(8000).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:75>,<icbmclassic:explosives:1>]).outputs([<icbmclassic:explosives:4>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives:10>*8]).outputs([<icbmclassic:explosives:21>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:explosives>,<minecraft:anvil>*8]).outputs([<icbmclassic:explosives:5>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//发射平台,发射支撑架
+assembler.recipeBuilder().inputs([<gregtech:frame_stainless_steel>*8,<gregtech:meta_item_1:32650>*2]).outputs([<icbmclassic:launcherbase>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:frame_stainless_steel>*8,<gregtech:meta_item_1:32652>*2]).outputs([<icbmclassic:launcherbase:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:frame_stainless_steel>*8,<gregtech:meta_item_1:32654>*2]).outputs([<icbmclassic:launcherbase:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:frame_steel>*3,<gregtech:meta_item_1:32690>*2]).outputs([<icbmclassic:launcherframe>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:frame_steel>*3,<gregtech:meta_item_1:32692>*2]).outputs([<icbmclassic:launcherframe:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:frame_steel>*3,<gregtech:meta_item_1:32694>*2]).outputs([<icbmclassic:launcherframe:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//物品
+assembler.recipeBuilder().inputs([<minecraft:glass_pane>,<gregtech:meta_item_2:32488>]).outputs([<icbmclassic:launcherscreen>]).property("circuit", 10).duration(600).EUt(32).buildAndRegister();
+assembler.recipeBuilder().inputs([<minecraft:glass_pane>,<gregtech:meta_item_2:32492>]).outputs([<icbmclassic:launcherscreen:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<minecraft:glass_pane>,<gregtech:meta_item_2:32495>]).outputs([<icbmclassic:launcherscreen:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_1:32597>,<gregtech:meta_item_2:32495>,<gregtech:machine:1001>*2]).outputs([<icbmclassic:emptower>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<minecraft:glass_pane>,<gregtech:meta_item_2:32507>,<gtadditions:ga_meta_item:184>*2,<quark:iron_button>]).outputs([<icbmclassic:radargun>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:radargun>,<gregtech:meta_item_1:12184>*4,<gregtech:meta_item_2:32495>]).outputs([<icbmclassic:radarstation>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<gregtech:meta_item_2:32492>,<gregtech:meta_item_1:10184>*2,<quark:iron_button>]).outputs([<icbmclassic:remotedetonator>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:laserdetonator>,<gregtech:meta_item_1:32692>]).outputs([<icbmclassic:tracker>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:radargun>,<icbmclassic:remotedetonator>]).outputs([<icbmclassic:laserdetonator>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//导弹1
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:3>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:3>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:1>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:2>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:7>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:7>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:6>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:6>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:4>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:4>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:5>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:5>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//导弹2
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:9>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:9>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:13>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:13>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:11>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:11>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:8>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:8>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:10>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:10>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+//导弹3
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:21>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:21>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:19>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:19>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:15>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:15>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:18>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:18>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:20>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:20>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:17>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:17>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+
+//导弹4 未完成
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:22>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:23>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
+
+
+
+
+
