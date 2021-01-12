@@ -117,7 +117,7 @@ assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosiv
 assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:22>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
 assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:23>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
 
-
+//手雷未完成
 
 
 
