@@ -91,33 +91,28 @@ assembler.recipeBuilder().inputs([<gregtech:meta_item_2:32492>,<gregtech:meta_it
 assembler.recipeBuilder().inputs([<icbmclassic:laserdetonator>,<gregtech:meta_item_1:32692>]).outputs([<icbmclassic:tracker>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
 assembler.recipeBuilder().inputs([<icbmclassic:radargun>,<icbmclassic:remotedetonator>]).outputs([<icbmclassic:laserdetonator>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
 //导弹1
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:3>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:3>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:1>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:2>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:7>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:7>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:6>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:6>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:4>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:4>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:5>,<vehicle:small_engine:1>]).outputs([<icbmclassic:missile:5>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:3>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:3>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:1>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:1>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:2>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:2>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:7>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:7>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:6>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:6>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:4>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:4>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:5>,<vehicle:small_engine:1>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:5>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
 //导弹2
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:9>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:9>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:13>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:13>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:11>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:11>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:8>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:8>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:10>,<vehicle:small_engine:2>]).outputs([<icbmclassic:missile:10>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:9>,<vehicle:small_engine:2>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:9>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:13>,<vehicle:small_engine:2>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:13>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:11>,<vehicle:small_engine:2>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:11>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:8>,<vehicle:small_engine:2>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:8>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:10>,<vehicle:small_engine:2>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:10>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
 //导弹3
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:21>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:21>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:19>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:19>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:15>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:15>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:18>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:18>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:20>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:20>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:17>,<vehicle:small_engine:3>]).outputs([<icbmclassic:missile:17>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:21>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:21>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:19>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:19>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:15>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:15>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:18>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:18>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:20>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:20>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<icbmclassic:explosives:17>,<vehicle:small_engine:3>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:17>]).property("circuit", 10).duration(600).EUt(128).buildAndRegister();
 
 //导弹4 未完成
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:22>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
-assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).outputs([<icbmclassic:missile:23>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
-
-//手雷未完成
-
-
-
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:22>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
+assembler.recipeBuilder().inputs([<icbmclassic:missile:24>,<vehicle:small_engine:4>]).fluidInputs([<liquid:dimethylhidrazine>*1000]).outputs([<icbmclassic:missile:23>]).property("circuit", 10).duration(600).EUt(50000).buildAndRegister();
